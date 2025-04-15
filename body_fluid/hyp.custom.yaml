@@ -1,0 +1,33 @@
+# Hyperparameters for YOLOv11 training
+# ค่านี้สามารถถูก random ปรับโดย evolution ได้ หากใช้ใน mode=hyper
+
+lr0: 0.01              # initial learning rate
+lrf: 0.1               # final learning rate (lr0 * lrf)
+momentum: 0.937        # SGD momentum/optimizer
+weight_decay: 0.0005   # optimizer weight decay
+
+warmup_epochs: 3.0     # number of warmup epochs
+warmup_momentum: 0.8   # warmup initial momentum
+warmup_bias_lr: 0.1    # warmup initial bias lr
+
+box: 0.05              # box loss gain
+cls: 0.5               # class loss gain
+dfl: 1.5               # Distribution Focal Loss gain
+
+fl_gamma: 0.0          # focal loss gamma
+
+hsv_h: 0.015           # image HSV-Hue augmentation (color)
+hsv_s: 0.7             # image HSV-Saturation augmentation
+hsv_v: 0.4             # image HSV-Value augmentation
+
+degrees: 0.0           # image rotation
+translate: 0.1         # image translation
+scale: 0.5             # image scale
+shear: 0.0             # image shear
+
+perspective: 0.0       # perspective transform
+flipud: 0.0            # vertical flip
+fliplr: 0.5            # horizontal flip
+mosaic: 1.0            # mosaic augmentation
+mixup: 0.0             # mixup augmentation
+copy_paste: 0.0        # copy-paste augmentation
